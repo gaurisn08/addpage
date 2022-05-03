@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <style>
+        @import
+url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+body{
+    background-color:#03045E;
+    font-family: 'Quicksand';
+}
+[class*="login"] {
+    left:8%;
+  }
+  
+@media only screen and (min-width: 768px) {.login {left:37%;}}
+.login{
+    position:absolute;
+    top:23%;
+    width:400px;
+    padding:40px;
+    border-radius:10px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(238, 238, 240, 0.05), 0 15px 40px rgba(243, 245, 250, 0.2);
+}
+.login h2{
+    text-align: center;
+}
+.login .user{
+ padding: 18px 0;
+position:relative;
+}
+.login ion-icon{
+    font-size: 18px;
+    color:#000000;
+}
+.login .user #uname,#pwd{
+    width:100%;
+    font-family: 'Quicksand';
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+.login .user #uname,#pwd:focus{
+    outline: none;
+}
+#log{
+    font-family: 'Quicksand';
+    width:23.15%;
+    height:32px;
+    background-color:#1C658C;
+    color: #ffffff;
+    margin-left:37%;
+}
+label{
+    font-weight: bold;
+    color:rgb(22, 22, 16);
+}
+    </style>
+</head>
+
+<body>
+   
+    <form class="login">
+        <h2>Login</h2>
+      <div class="user">
+        <ion-icon name="person-outline"></ion-icon>
+        <label>Username</label>
+        <input type="email" id="uname">
+    </div>
+    <div class="user">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <label>Password </label><br>
+       <input type="password" id="pwd">
+    </div>
+        <br>
+    <div class="user">
+       <input type="checkbox" id="rme" value="Remember me">
+       <label>Remember Me</label><br>
+    </div>
+       <br>
+    </div>
+    <input type="button" id ="log" value="Login">
+    </form>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
